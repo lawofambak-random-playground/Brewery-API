@@ -1,13 +1,111 @@
 body {
   margin: 0;
-  font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', 'Roboto', 'Oxygen',
-    'Ubuntu', 'Cantarell', 'Fira Sans', 'Droid Sans', 'Helvetica Neue',
-    sans-serif;
-  -webkit-font-smoothing: antialiased;
-  -moz-osx-font-smoothing: grayscale;
+  background: rgb(238, 205, 161);
+  color: rgb(124, 91, 0);
+  font-family: monospace;
 }
 
-code {
-  font-family: source-code-pro, Menlo, Monaco, Consolas, 'Courier New',
-    monospace;
+.App {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+}
+
+.Main {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+}
+
+.Header {
+  font-size: 25px;
+}
+
+.Footer {
+  font-style: italic;
+  color: black;
+}
+
+.SearchText {
+  font-size: 20px;
+}
+
+.Input {
+  width: 500px;
+  height: 20px;
+  border-radius: 5px;
+}
+
+.SearchButton {
+  height: 25px;
+  border-radius: 10px;
+  border-style: groove;
+  width: 70px;
+  color: white;
+  font-weight: bolder;
+  background-color: rgb(56, 50, 50);
+}
+
+.ClearButton {
+  height: 25px;
+  border-radius: 10px;
+  border-style: groove;
+  width: 70px;
+  color: white;
+  font-weight: bolder;
+  background-color: rgb(219, 73, 73);
+}
+
+.Results {
+  background: rgb(209, 180, 141);
+  padding: 15px;
+  margin-top: 15px;
+  margin-bottom: 15px;
+  width: 125vh;
+  height: 55vh;
+  overflow-y: scroll;
+  overflow-x: hidden;
+  border-radius: 10px;
+}
+
+::-webkit-scrollbar {
+  width: 15px;
+}
+
+::-webkit-scrollbar-track {
+  box-shadow: inset 0 0 5px grey;
+  border-radius: 10px;
+}
+
+::-webkit-scrollbar-thumb {
+  background: black;
+  border-radius: 10px;
+}
+
+.BreweryList {
+  list-style: none;
+}
+
+.BreweryName {
+  font-size: 35px;
+}
+
+.BreweryLocation {
+  font-size: 20px;
+  font-weight: 500;
+}
+
+.BreweryWebsite {
+  font-size: 15px;
+  color: inherit;
+}
+
+.NoResults {
+  font-size: 40px;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
 }
